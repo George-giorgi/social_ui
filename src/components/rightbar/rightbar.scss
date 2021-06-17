@@ -1,0 +1,87 @@
+@import "../../global.scss";
+.Rightbar{
+    flex: 3.5;
+    @include mobile{
+        display: none; 
+       
+    }  
+
+    .rightBarWrapper{
+        padding: 20px 20px 0 0;
+        
+        .birthDayConteiner{
+            display: flex;
+            align-items: center;
+            .birthDayImg{
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+            .birthDayText{
+                font-weight: 300;
+                font-size: 15px;
+            }
+        }
+        .rightbarAd{
+            width: 100%;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .rightbarTitle{
+            margin-bottom: 15px;
+        }
+        .rightbarFriendList{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            // dalshe onlineshi
+        }
+        
+    }
+}
+
+
+/// component styles
+
+.rightbarTitl{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.rightbarInfo{
+    margin-bottom: 30px;
+    .rightbarInfoItem{
+        margin-bottom: 10px;
+        .rightbarInfokey{
+            font-weight: 500;
+            margin-right: 15px;
+            color: #555;
+        }
+        .rightbarInfoValue{
+           font-weight: 300;
+        }
+    }
+}
+.rightbarTitle{
+
+}
+.rightbarFollowings{
+    display: flex;
+    flex-wrap: wrap;
+    
+    .rightbarFollowing{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        cursor: pointer;
+        .rightbarFollowingImg{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 7px;
+        }
+        .rightbarWollowingName{
+          padding-right: 5px;
+        }
+    }
+}

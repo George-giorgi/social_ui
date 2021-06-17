@@ -1,0 +1,87 @@
+@import "../../global.scss";
+
+.share{
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 17px -8px rgba(0,0,0,0.68); 
+    box-shadow: 0px 0px 17px -8px rgba(0,0,0,0.68);
+   
+    .shareWrapper{
+        padding: 10px;
+        .shareTop{
+           display: flex;
+           align-items: center;
+            .shareImg{
+                width: 52px;
+                height: 52px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+            .shareInput{
+                border: none;
+                width: 80%;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        .shareHr{
+            margin: 20px;
+        }
+        .shareButtom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include mobile{
+               flex-wrap: wrap;
+            //    justify-content: flex-start;
+            }
+            .sahreOptions{
+                display: flex;
+                margin-left: 20px;
+                .shareOption{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 15px;
+                    cursor: pointer;
+                    @include mobile{
+                        margin-right: 10px;
+                     }
+                    .shareIcon{
+                        font-size: 18px;
+                        margin-right: 3px;
+                        @include mobile{
+                            font-size: 15px;
+                         }
+                        
+                    }
+                    .shareOptionText{
+                        font-size: 14px;
+                        font-weight: 500;
+                        @include mobile{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            .shareButton{
+                border: none;
+                padding: 7px;
+                border-radius: 5px;
+                background-color: green;
+                font-weight: 500;
+                margin-right: 20px;
+                cursor: pointer;
+                color: white;
+                @include mobile{
+                    margin-top: 5px;
+                    margin-left: 20px;
+                    padding: 5px;
+                 }
+            }
+        }
+      
+    }
+}

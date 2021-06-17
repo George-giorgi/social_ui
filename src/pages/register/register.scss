@@ -1,0 +1,118 @@
+@import "../../global.scss";
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile{
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+     }
+    .loginWrapper{
+        width: 70%;
+        height: 70%;
+        display: flex;
+        @include mobile{
+            flex-direction: column;
+         }
+        .loginLeft ,.loginRight{
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         @include mobile{
+             margin-bottom: 20px; 
+            //  overflow-y: hidden;
+        }
+         .loginLogo{
+             font-size: 50px;
+             font-weight: 800;
+             color: #1775ee;
+             margin-bottom: 10px;
+             @include mobile{
+                font-size: 35px;
+                font-weight: 600;
+                text-align: center;
+             }
+           }
+           .loginDesc{
+               font-size: 24px;
+               @include mobile{
+                font-size: 18px;
+                font-weight: 400;
+                text-align: center;
+             }
+           }
+           .logiBox{
+               height: 400px;
+               padding: 20px;
+               background-color: white;
+               border-radius: 10px;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               @include mobile{
+                height: 350px;
+              }
+               .loginInput{
+                   height: 50px;
+                   border-radius: 10px;
+                   border: none;
+                   border: 3px solid white;
+                   font-size: 18px;
+                   padding-left: 18px;
+                   transition: border,outline 1s;
+                   box-shadow: 0 0 4pt 0.5pt #1775ee;
+                   @include mobile{
+                    height: 35px;
+                    font-size: 16px;
+                    }
+                   &:focus{
+                    outline: none;
+                    border: 3px solid #1775ee;
+                    transition: border 1s;
+                   }
+               }
+               .loginButton{
+                   height: 50px;
+                   border-radius: 10px;
+                   border: none;
+                   background-color:#1775ee ;
+                   color: white;
+                   font-size: 20px;
+                   font-weight: 500;
+                   cursor: pointer;
+                   @include mobile{
+                    height: 45px;
+                    font-size: 16px;
+                    }
+               }
+               .loginForgot{
+                   text-align: center;
+                   color: #1775ee ;
+               }
+               .loginRegister{
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                background-color:#42b72a ;
+                color: white;
+                font-size: 20px;
+                font-weight: 500;
+                cursor: pointer;
+                width: 55%;
+                align-self: center;
+                @include mobile{
+                    height: 45px;
+                    font-size: 16px;
+                    }
+
+               }
+              
+            }
+        }
+    }
+}
