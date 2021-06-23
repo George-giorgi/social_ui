@@ -54,7 +54,7 @@ export default function Topbar() {
 						<span className="topbarIconBage">1</span>
 					</div>
 				</div>
-				<img src="/assets/person/6.jpeg" alt="img" className="topBarimge" />
+				<img src="./assets/person/6.jpeg" alt="img" className="topBarimge" />
 				
 			</div>
 		</div>
